@@ -33,3 +33,21 @@ Follow these steps to run the script in Termux on Android:
    chmod +x terminal_toolkit.sh
    ## run the script
    ./terminal_toolkit.sh
+
+## Note for Android Users (Termux)
+
+If you downloaded the terminal_toolkit.sh file to your phone's internal storage (e.g., Download folder) and you see the error:
+
+bash: ./terminal_toolkit.sh: Permission denied
+
+This happens because Android does not allow executing scripts directly from /sdcard.
+
+To fix this, simply copy the script to Termux's home directory and run it:
+
+cp /sdcard/Download/terminal_toolkit.sh ~/
+cd ~
+chmod +x terminal_toolkit.sh
+./terminal_toolkit.sh
+
+Now the script will run without any issues.
+make by ali sarbalavand
